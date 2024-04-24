@@ -1,28 +1,25 @@
-// Copyright (c) 2024 Nathan De Silva. All rights reserved
+// Copyright (c) 2023 Dominic M. All rights reserved
 //
-// Created by: Nathan De Silva
-// Created on: April 2024
+// Created by: Dominic M.
+// Created on: April 2023
 // This file contains the JS functions for index.html
 
 "use strict"
 
-const randomNumber = Math.floor(Math.random() * 6) + 1
+/**
+ * This function uses a selection component from https://github.com/CreativeIT/getmdl-select
+ */
 
 function myButtonClicked() {
-  // input
-  const numberGuessed = parseInt(document.getElementById('guess').value)
+  const positiveButton = document.getElementById("on-check").checked
 
-  // process
-  if (numberGuessed == randomNumber) {
-
-    // output
-    document.getElementById('answer').innerHTML = 'You guessed the correct number! The Number Was ' + randomNumber + '!'
-  }
-
-  // process
-  if (numberGuessed != randomNumber) {
-
-    // output
-    document.getElementById('answer').innerHTML = 'You have guessed the wrong number!'
+  if (positiveButton == true) {
+    const randomNumber = Math.floor(Math.random() * 6) + 1
+    document.getElementById("answer").innerHTML =
+      "Your number is: " + randomNumber
+  } else {
+    const randomNegativeNumber = Math.floor(Math.random() * 6 + 1) * -1
+    document.getElementById("answer").innerHTML =
+      "Your number is: " + randomNegativeNumber
   }
 }
