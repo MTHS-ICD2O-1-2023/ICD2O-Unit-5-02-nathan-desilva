@@ -6,9 +6,6 @@
 
 "use strict"
 
-/**
- * This function uses a selection component from https://github.com/CreativeIT/getmdl-select
- */
 
 function myButtonClicked() {
   const positiveButton = document.getElementById("on-check").checked
