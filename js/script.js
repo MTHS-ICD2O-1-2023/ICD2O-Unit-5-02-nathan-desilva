@@ -8,7 +8,7 @@
 
 
 function myButtonClicked() {
-  const positiveButton = document.getElementById("on-check").checked
+  const positiveButton = document.getElementById("positive").checked
 
   if (positiveButton == true) {
     const randomNumber = Math.floor(Math.random() * 6) + 1
