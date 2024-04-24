@@ -1,7 +1,7 @@
-// Copyright (c) 2023 Dominic M. All rights reserved
+// Copyright (c) 2024 Nathan De Silva. All rights reserved
 //
-// Created by: Dominic M.
-// Created on: April 2023
+// Created by: Nathan De Silva
+// Created on: April 2024
 // This file contains the JS functions for index.html
 
 "use strict"
